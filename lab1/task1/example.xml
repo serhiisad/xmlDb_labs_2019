@@ -1,0 +1,19 @@
+<data>
+<page url=”wwww.server.com/index.hml”>
+<fragment type=”text”>
+…. знайдений текст
+</fragment>
+<fragment type=”image”>
+…. url зображення
+</fragment>
+</page>
+<page url=”wwww.server.com/index1.hml”>
+<fragment type=”text”>
+…. знайдений текст
+</fragment>
+<fragment type=”image”>
+…. url зображення
+</fragment>
+</page>
+…
+</data>

@@ -1,0 +1,41 @@
+import scrapy
+import lxml
+import parsel
+from scrapy.selector import Selector
+from lxml import etree
+
+
+class PagesSpider(scrapy.Spider):
+
+    PAGES = 20
+    name = "pages"
+    start_urls = [
+        'https://shkola.ua/shkoli'
+    ]
+
+    def parse(self, response):
+
+        root = etree.Element("data")
+
+        for content in response.xpath("//div[@class = \"media lw-item\"/a]"):
+            page = etree.SubElement(root, "page")
+            image_url = content.xpath()
+
+            # yield {
+            #
+            # }
+
+
+        page = response.url.split("/")[-2]
+        filename = 'quotes-%s.html' % page
+        with open(filename, 'wb') as f:
+            f.write(response.body)
+        self.log('Saved file %s' % filename)
+
+        #following the pagination on the page
+        next_page_url = response.xpath('....').extract_first()
+        if next_page_url is not None:
+            yield scrapy.Request(response.urljoin(next_page_url))
+
+    # def save_to_xml(self, filepath, data):
+

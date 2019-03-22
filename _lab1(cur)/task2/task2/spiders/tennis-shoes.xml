@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="tennis-shop.xsl"?>
+
+<items>
+    <item>
+        <title>
+            Кроссовки NIKE M COURT LITE BK 2019
+        </title>
+        <price>1 539 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/73b/160_160_1/73b7edc58d3e4a30c073cf89bc121e3c.jpeg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M COURT LITE 2019
+        </title>
+        <price>1 539 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/a0b/160_160_1/a0b86373fa34dc32fcdbdcca27fec8bc.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M AIR MAX DELUX BL 2019
+        </title>
+        <price>5 299 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/b79/160_160_1/b79ea4aafec4522bb2234b23c9c7056e.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M AIR MAX DELUX BK 2019
+        </title>
+        <price>5 299 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/ad2/160_160_1/ad2235237e3eddf80db2b9d7bef8052e.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE ZOOM VAPOR X CLAY BK R.FEDERER 2019
+        </title>
+        <price>3 819 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/e74/160_160_1/e7440da7d7956c449263f6f836f14948.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M AIR ZOOM VAPOR X HC AURORA GREEN R.FEDERER 2019
+        </title>
+        <price>3 819 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/e8e/160_160_1/e8ea0f3cc73e9c394356f136bd651654.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE ZOOM VAPOR X CLAY R. FEDERER 2019
+        </title>
+        <price>3 819 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/b18/160_160_1/b18aa6e230fb05801e5a551a31cbea44.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M AIR ZOOM VAPOR X HC R.FEDERER 2019
+        </title>
+        <price>3 819 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/878/160_160_1/878e4c5e011849c8a6e46642cae633c4.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE ZOOM VAPOR X CLAY PK R.FEDERER 2019
+        </title>
+        <price>3 819 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/4ef/160_160_1/4ef7388fe78b1025c1662d0914d527ea.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE AIR ZOOM CAGE 3 CLY BLACK R.NADAL 2019
+        </title>
+        <price>3 459 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/577/160_160_1/57779022153f5e22935617db0a9c16bf.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M AIR ZOOM CAGE 3 HC R.NADAL 2019
+        </title>
+        <price>3 459 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/6f0/160_160_1/6f0ae5121a2ae4a8793caaa5cc64d37b.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M AIR ZOOM CAGE 3 HC OR R.NADAL 2019
+        </title>
+        <price>3 459 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/f2a/160_160_1/f2a914e6e97ece0a0dab81b4f5ab3b35.jpeg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE AIR ZOOM CAGE 3 CLY R.NADAL 2019
+        </title>
+        <price>3 459 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/80b/160_160_1/80b0514dedf85ae6a5f13d31e3087945.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M AIR ZOOM RESISTANCE 2019
+        </title>
+        <price>1 979 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/03f/160_160_1/03f9ac2ad35278002f2c872f6bc377e9.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M AIR ZOOM RESISTANCE GR 2019
+        </title>
+        <price>1 839 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/221/160_160_1/221ab99e84f76a9bec7a199df20f75a5.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M COURT LITE BK 2019
+        </title>
+        <price>1 539 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/73b/160_160_1/73b7edc58d3e4a30c073cf89bc121e3c.jpeg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M COURT LITE CLY 2019
+        </title>
+        <price>1 539 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/4a5/160_160_1/4a54abfc5e01654634a575fa57597131.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M COURT LITE CLY GR 2019
+        </title>
+        <price>1 539 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/4ca/160_160_1/4ca7acf9e2d9ee106703c38fed40e335.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M COURT LITE GR/BL 2019
+        </title>
+        <price>1 539 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/ba4/160_160_1/ba481d8ba2607dd6702cec08fdd09856.jpg
+        </image_urls>
+    </item>
+    <item>
+        <title>
+            Кроссовки NIKE M AIR ZOOM VAPOR X HC WH/BL R.FEDERER
+        </title>
+        <price>2 899 грн.</price>
+        <image_urls>
+            https://tennismag.com.ua/upload/resize_cache/iblock/c26/160_160_1/c26c11426e74ed51966431a662f88308.jpg
+        </image_urls>
+    </item>
+</items>
