@@ -1,0 +1,108 @@
+Шардинг MongoDB
+
+Создаем первый репликасет с именем rs0(для любого репликасета обязательно минимум 3 узла)
+
+(--replSet - имя репликасета
+ --dbpath - путь к бд {если нету - создать папку})
+{создать папку для бд1: mkdir /var/lib/mongodb1}
+
+Все процессы в отдельном терминале/вкладке (чтобы открыть новую вкладку в терминале -> ctrl+shift+t)
+
+sudo mongod --shardsvr --port 27001 --dbpath /var/lib/mongodb1 --replSet rs0
+sudo mongod --shardsvr --port 27002 --dbpath /var/lib/mongodb2 --replSet rs0
+sudo mongod --shardsvr --port 27003 --dbpath /var/lib/mongodb3 --replSet rs0
+
+Инициализируем репликасет 
+sudo mongo --port 27001
+	rs.initiate()
+	rs.add("localhost:27002");
+	rs.add("localhost:27003");
+	(добавили слейвы к мастеру)
+	rs.status();
+	(команда просто для проверки, мемберов должно быть 3)
+	(можно закрыть терминал)
+
+Тут можно проверить состояние других реплик:
+sudo mongo --port 27002
+sudo mongo --port 27003
+Если все запускает и все ок то идем дальше
+
+Создаем второй репликасет с именем rs1
+
+sudo mongod --shardsvr --port 27004 --dbpath /var/lib/mongodb4 --replSet rs1
+sudo mongod --shardsvr --port 27005 --dbpath /var/lib/mongodb5 --replSet rs1
+sudo mongod --shardsvr --port 27006 --dbpath /var/lib/mongodb6 --replSet rs1
+sudo mongo --port 27004
+	rs.initiate()
+	rs.add("localhost:27005");
+	rs.add("localhost:27006");
+
+
+Создаем репликасет конфиг-сервера
+
+sudo mongod --configsvr --port 27011 --dbpath /var/lib/mongodb7 --replSet configReplSet 
+sudo mongod --configsvr --port 27012 --dbpath /var/lib/mongodb8 --replSet configReplSet 
+sudo mongod --configsvr --port 27013 --dbpath /var/lib/mongodb9 --replSet configReplSet 
+sudo mongo --port 27011
+	rs.initiate()
+	rs.add("localhost:27012");
+	rs.add("localhost:27013");
+
+Запускаем mongos
+
+mongos --configdb configReplSet/localhost:27011,localhost:27012,localhost:27013 --port 27100
+
+Далее работаем с интерфейсом монгос:
+
+sh.status() -- проверить статус монгос (чисто посмотреть шо да как)
+
+Добавляем шарды
+sh.addShard( "rs0/localhost:27001,localhost:27002,localhost:27003" )
+sh.addShard( "rs1/localhost:27004,localhost:27005,localhost:27006" )
+
+Вкл шардинг
+sh.enableSharding("course-work") (в моем случае база данных называется "course-work")
+
+use course-work
+db.news.createIndex({weekday : 1}) (news - коллекция которую шардируем, weekday - shard key)
+sh.shardCollection("course-work.news", { weekday: 1})
+
+Далее действия вроде необязательны, но их можно сделать шобы понтануться (та и не тестил я без этого)
+Тут мы делаем так шоб в один шард закидывались только дни 0-4, а в другой 5-6: {
+	Добавляем теги для шардов
+	sh.addShardTag("rs0", "Zone1")
+	sh.addShardTag("rs1", "Zone2")
+
+	Ренжируем шарды
+	sh.addTagRange("course-work.news", {weekday: 0}, {weekday: 5}, "Zone1")
+	sh.addTagRange("course-work.news", {weekday: 5}, {weekday: 7}, "Zone2")
+	Все объекты которые имеют поле weekday от 0 до 5 попадают в шард Zone1 => репликасет rs0
+	Все объекты которые имеют поле weekday от 5 до 7 попадают в шард Zone2 => репликасет rs1
+}
+
+Теперь можно протестировать как все работает добавляя элементы в коллекцию и смотреть как они распределяются по шардам.
+Я лично юзаю robomongo как клиент для монго {
+	wget https://download.robomongo.org/0.8.5/linux/robomongo-0.8.5-x86_64.deb
+	sudo dpkg -i robomongo-0.8.5-x86_64.deb
+} Чтоба запустить теперь введи в терминал-> robomongo
+
+
+На сервере подключаемся к localhost:27100
+!!! НЕ ДРОПАЙТЕ БАЗУ НЕ ДРОПАЙТЕ БАЗУ НЕ ДРОПАЙТЕ БАЗУ НЕ ДРОПАЙТЕ БАЗУ НЕ ДРОПАЙТЕ БАЗУ НЕ ДРОПАЙТЕ БАЗУ
+иначе настройки шардига слетят
+чтобы удалить данные в коллекции юзайте db.collection.remove()
+
+если дропнули - опять введите команды =>
+sh.enableSharding("course-work") (в моем случае база данных называется "course-work")
+use course-work
+db.news.createIndex({weekday : 1}) (news - коллекция которую шардируем, weekday - shard key)
+sh.shardCollection("course-work.news", { weekday: 1})
+
+
+
+Узнать полезности :
+https://habr.com/ru/post/217393/
+https://proselyte.net/tutorials/mongodb/replication/
+https://proselyte.net/tutorials/mongodb/sharding/
+
+
