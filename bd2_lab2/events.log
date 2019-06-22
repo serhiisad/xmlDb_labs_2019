@@ -1,0 +1,84 @@
+INFO:root:USER admin logged in at 2019-06-03 11:35:49.719796 
+
+INFO:root:USER 2 signed out at 2019-06-03 11:36:36.518061 
+
+INFO:root:USER mary58 logged in at 2019-06-03 11:36:41.194055 
+
+INFO:root:USER 8 signed out at 2019-06-03 11:37:21.238854 
+
+INFO:root:USER admin logged in at 2019-06-03 11:37:26.639151 
+
+INFO:root:USER 2 signed out at 2019-06-03 11:37:52.823411 
+
+INFO:root:USER admin logged in at 2019-06-06 14:18:40.150411 
+
+INFO:root:USER 2 signed out at 2019-06-06 14:19:35.505381 
+
+INFO:root:USER wer registered at 2019-06-06 14:35:36.954889 
+
+INFO:root:USER wer logged in at 2019-06-06 14:35:39.650193 
+
+INFO:root:
+EVENT: User wer signed in | 2019-06-06 14:35:39.650637
+INFO:root:USER 14 signed out at 2019-06-06 14:35:57.421493 
+
+INFO:root:
+EVENT: User wer signed out | 2019-06-06 14:35:57.423822
+INFO:root:USER admin logged in at 2019-06-06 14:36:00.741894 
+
+INFO:root:
+EVENT: User admin signed in | 2019-06-06 14:36:00.743115
+INFO:root:USER 2 signed out at 2019-06-06 14:36:08.475033 
+
+INFO:root:
+EVENT: User admin signed out | 2019-06-06 14:36:08.477083
+INFO:root:USER wer logged in at 2019-06-06 14:36:10.865283 
+
+INFO:root:
+EVENT: User wer signed in | 2019-06-06 14:36:10.866581
+INFO:root:USER -1 signed out at 2019-06-06 14:37:10.322040 
+
+INFO:root:USER admin logged in at 2019-06-06 15:32:44.614017 
+
+INFO:root:
+EVENT: User admin signed in | 2019-06-06 15:32:44.615462
+INFO:root:
+EVENT: User admin signed in | 2019-06-06 15:32:44.615402
+INFO:root:USER 14 signed out at 2019-06-06 15:51:27.152719 
+
+INFO:root:USER user1 registered at 2019-06-14 12:06:41.705336 
+
+INFO:root:USER user1 logged in at 2019-06-14 12:06:48.948473 
+
+INFO:root:
+EVENT: User user1 signed in | 2019-06-14 12:06:48.949873
+INFO:root:USER 1 signed out at 2019-06-14 12:06:52.242316 
+
+INFO:root:
+EVENT: User user1 signed out | 2019-06-14 12:06:52.244200
+INFO:root:USER admin registered at 2019-06-14 12:07:06.096256 
+
+INFO:root:USER admin logged in at 2019-06-14 12:07:09.428187 
+
+INFO:root:
+EVENT: User admin signed in | 2019-06-14 12:07:09.429409
+INFO:root:USER pasha registered at 2019-06-14 12:08:13.106270 
+
+INFO:root:USER pasha logged in at 2019-06-14 12:08:15.977241 
+
+INFO:root:
+EVENT: User pasha signed in | 2019-06-14 12:08:15.977715
+INFO:root:USER -1 signed out at 2019-06-14 12:12:47.773509 
+
+INFO:root:USER 3 signed out at 2019-06-14 12:21:09.612669 
+
+INFO:root:USER 2 signed out at 2019-06-14 12:21:12.443319 
+
+INFO:root:USER -1 signed out at 2019-06-14 12:21:55.045278 
+
+INFO:root:USER pasha logged in at 2019-06-14 12:22:15.294964 
+
+INFO:root:
+EVENT: User pasha signed in | 2019-06-14 12:22:15.296195
+INFO:root:USER 3 signed out at 2019-06-14 12:25:29.329747 
+
